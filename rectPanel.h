@@ -1,14 +1,7 @@
-#ifndef rectPanel_h
-#define rectPanel_h
-
-#include "ofMain.h"
-
-class rectPanel {
-private:
+#pragma once
+class rectPanel
+{
 public:
 	rectPanel();
-	void draw();
-	void update();
+	~rectPanel();
 };
-
-#endif
