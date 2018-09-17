@@ -36,6 +36,6 @@ void rectPanel::addBrightness(int vol) {
 	color.setBrightness(color.getBrightness() + vol);
 }
 
-void rectPanel::moveZ() {
-	xyzPoint.z = -10;
+void rectPanel::moveZ(int zPoint) {
+	xyzPoint.z = zPoint;
 }

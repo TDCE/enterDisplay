@@ -24,9 +24,25 @@ void ofApp::update(){
 		}*/
 		int x = rectPanels[i]->getXYZPoint().x;
 		int y = rectPanels[i]->getXYZPoint().y;
-		if (x < mouseX + 200 && mouseX - 200 < x && y < mouseY + 200 && mouseY -200 < y) {
+		if (x < mouseX + 50 && mouseX - 50 < x && y < mouseY + 50 && mouseY - 50 < y) {
 			rectPanels[i]->addBrightness(20);
-			rectPanels[i]->moveZ();
+			rectPanels[i]->moveZ(20);
+		}
+		else if (x < mouseX + 100 && mouseX - 100 < x && y < mouseY + 100 && mouseY - 100 < y) {
+			rectPanels[i]->addBrightness(15);
+			rectPanels[i]->moveZ(15);
+		}
+		else if (x < mouseX + 150 && mouseX - 150 < x && y < mouseY + 150 && mouseY - 150 < y) {
+			rectPanels[i]->addBrightness(10);
+			rectPanels[i]->moveZ(10);
+		}
+		else if (x < mouseX + 200 && mouseX - 200 < x && y < mouseY + 200 && mouseY -200 < y) {
+			rectPanels[i]->addBrightness(5);
+			rectPanels[i]->moveZ(5);
+		}
+		else {
+			rectPanels[i]->addBrightness(0);
+			rectPanels[i]->moveZ(0);
 		}
 	}
 }

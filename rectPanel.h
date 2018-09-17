@@ -18,6 +18,6 @@ public:
 	void update();
 	void draw();
 	ofVec3f getXYZPoint();
-	void moveZ();
+	void moveZ(int zPoint);
 	void addBrightness(int vol);
 };
